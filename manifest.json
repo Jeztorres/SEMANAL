@@ -1,0 +1,83 @@
+{
+    "name": "FinanzApp - Gestión Semanal",
+    "short_name": "FinanzApp",
+    "description": "Aplicación moderna para gestionar tus finanzas semanales de manera efectiva",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#1e3a8a",
+    "theme_color": "#1e3a8a",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "es-ES",
+    "categories": ["finance", "productivity", "business"],
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iMzIiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik05NiA0OEM4MS4yIDQ4IDY4IDU0IDU4IDYzQzQ4IDcyIDQyIDg0IDQyIDk2UzQ4IDEyMCA1OCAxMjlDNjggMTM4IDgxLjIgMTQ0IDk2IDE0NEMxMTAuOCAxNDQgMTI0IDEzOCAxMzQgMTI5QzE0NCAxMjAgMTUwIDEwOCAxNTAgOTZTMTQ0IDcyIDEzNCA2M0MxMjQgNTQgMTEwLjggNDggOTYgNDhaTTk2IDU2QzEwNi4yIDU2IDExNiA2MC40IDEyNC4yIDY3LjhDMTMyLjQgNzUuMiAxMzcgODUuMiAxMzcgOTZTMTMyLjQgMTE2LjggMTI0LjIgMTI0LjJDMTE2IDEzMS42IDEwNi4yIDEzNiA5NiAxMzZTNzYgMTMxLjYgNjcuOCAxMjQuMkM1OS42IDExNi44IDU1IDEwNi44IDU1IDk2UzU5LjYgNzUuMiA2Ny44IDY3LjhDNzYgNjAuNCA4NS44IDU2IDk2IDU2WiIgZmlsbD0id2hpdGUiLz4KPHN2ZyB4PSI3MiIgeT0iNzIiIHdpZHRoPSI0OCIgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+CjxwYXRoIGQ9Ik0xMiAyQzEzLjEgMiAxNCAAIDI5MSAxNFYxMEMxNCAxMS4xIDEzLjEgMTIgMTIgMTJTMTAgMTEuMSAxMCAxMFY0QzEwIDIuOSAxMC45IDIgMTIgMlpNMjEgOUw0IDlDNC4xIDkguNCA0LjMgNy45IDQuNyA3LjVMMy4zIDYuMUM0LjQgNS4xIDguMTIgMiAxMiAyUzE5LjYgNS4xIDIwLjcgNi4xTDE5LjMgNy41QzE5LjcgNy45IDE5LjkgOC40IDIwIDlIMjFaTTIxIDEwSDE5VjIySDVWMTBIM1YyMkgxQzAuNCAwIDAgMC40IDAgMVMyMiAxIDEgMUgxNlYyMkMxNiAyMi42IDE1LjYgMjMgMTUgMjNIMVYyMkMwLjQgMjIgMCwyMS42IDAsMjFWMjJIMjJDMjIuNiAyMiAyMyAyMS42IDIzIDIxVjEwSDE5WiIvPgo8L3N2Zz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwX2xpbmVhcl8xXzEiIHgxPSIwIiB5MT0iMCIgeDI9IjE5MiIgeTI9IjE5MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMWUzYThhIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNiODJmNiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iODQiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl81MTJfMSkiLz4KPHBhdGggZD0iTTI1NiAxMjhDMjE2LjggMTI4IDE4MSAzNiAxNTUuMiAxNjhDMTI4IDIwMCAxMTIgMjI0IDExMiAyNTZTMTI4IDMxMiAxNTUuMiAzNDRDMTgxLjMzNiAzNzYgMjE2LjggMzg0IDI1NiAzODRDMjk1LjIgMzg0IDMzMC42NjQgMzc2IDM1Ni44IDM0NEMzODQgMzEyIDQwMCAyODggNDAwIDI1NlMzODQgMjAwIDM1Ni44IDE2OEMzMzAuNjY0IDEzNiAyOTUuMiAxMjggMjU2IDEyOFpNMjU2IDE0OEMyODQuNTMzIDE0OCAzMTAuOTMzIDE1Ni44IDMzMSAxODEuMzMzQzM1MS4wNjcgMjA1Ljg2NyAzNjYuNjY3IDIzNi44IDM2Ni42NjcgMjU2UzM1MS4wNjcgMzA2LjEzMyAzMzEgMzMwLjY2N0MzMTAuOTMzIDM1NS4yIDI4NC41MzMgMzY0IDI1NiAzNjRTMjAxLjA2NyAzNTUuMiAxODEgMzMwLjY2N0MxNjAuOTMzIDMwNi4xMzMgMTQ1LjMzMyAyNzUuMiAxNDUuMzMzIDI1NlMxNjAuOTMzIDIwNS44NjcgMTgxIDE4MS4zMzNDMjAxLjA2NyAxNTYuOCAyMjcuNDY3IDE0OCAyNTYgMTQ4WiIgZmlsbD0id2hpdGUiLz4KPHN2ZyB4PSIxOTIiIHk9IjE5MiIgd2lkdGg9IjEyOCIgaGVpZ2h0PSIxMjgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPgo8cGF0aCBkPSJNMTIgMkMxMy4xIDIgMTQgMi45IDE0IDRWMTBDMTQgMTEuMSAxMy4xIDEyIDEyIDEyUzEwIDExLjEgMTAgMTBWNEM0IDIuOSAxMC45IDIgMTIgMlpNMjEgOUM4IDlDNC4xIDkuNCA0LjMgNy45IDQuNyA3LjVMMy4zIDYuMUM0LjQgNS4xIDguMTIgMiAxMiAyUzE5LjYgNS4xIDIwLjcgNi4xTDE5LjMgNy41QzE5LjcgNy45IDE5LjkgOC40IDIwIDlIMjFaTTIxIDEwSDE5VjIySDVWMTBIM1YyMkgxUTAuNCAwIDAgMC40IDAgMVMyMiAxIDEgMUgxNlYyMkMxNiAyMi42IDE1LjYgMjMgMTUgMjNIMVYyMkMwLjQgMjIgMCwyMS42IDAsMjFWMjJIMjJDMjIuNiAyMiAyMyAyMS42IDIzIDIxVjEwSDE5WiIvPgo8L3N2Zz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQwX2xpbmVhcl81MTJfMSIgeDE9IjAiIHkxPSIwIiB4Mj0iNTEyIiB5Mj0iNTEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxZTNhOGEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+",
+            "sizes": "512x512",
+            "type": "image/svg+xml"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Registrar Ingreso",
+            "short_name": "Ingreso",
+            "description": "Registrar un nuevo ingreso",
+            "url": "/#ingresos",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDE2IiBoZWlnaHQ9IjU0IiB2aWV3Qm94PSIwIDAgNDEgNTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjIwLjUiIGN5PSIyNyIgcj0iMjAuNSIgZmlsbD0iIzEwYjk4MSIvPgo8cGF0aCBkPSJNMjAgMTBWNDRNMTIgMjBINjA4IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
+                }
+            ]
+        },
+        {
+            "name": "Registrar Gasto",
+            "short_name": "Gasto",
+            "description": "Registrar un nuevo gasto",
+            "url": "/#gastos",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDE2IiBoZWlnaHQ9IjU0IiB2aWV3Qm94PSIwIDAgNDEgNTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjIwLjUiIGN5PSIyNyIgcj0iMjAuNSIgZmlsbD0iI2VmNDQ0NCIvPgo8cGF0aCBkPSJNMTIgMjBINjA4IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
+                }
+            ]
+        },
+        {
+            "name": "Ver Reporte",
+            "short_name": "Reporte",
+            "description": "Ver reporte semanal",
+            "url": "/#reporte",
+            "icons": [
+                {
+                    "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDE2IiBoZWlnaHQ9IjU0IiB2aWV3Qm94PSIwIDAgNDEgNTQiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjIwLjUiIGN5PSIyNyIgcj0iMjAuNSIgZmlsbD0iIzFlM2E4YSIvPgo8cGF0aCBkPSJNMTIgMTZMMjAgMTZMMjggMjBWMzAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPg==",
+                    "sizes": "96x96",
+                    "type": "image/svg+xml"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjcwIiBoZWlnaHQ9IjQ4MCIgdmlld0JveD0iMCAwIDI3MCA0ODAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyNzAiIGhlaWdodD0iNDgwIiByeD0iMjAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl9zY3JlZW4xKSIvPgo8cmVjdCB4PSIyMCIgeT0iNjAiIHdpZHRoPSIyMzAiIGhlaWdodD0iMzAiIHJ4PSIxNSIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOSIvPgo8cmVjdCB4PSIyMCIgeT0iMTEwIiB3aWR0aD0iMjMwIiBoZWlnaHQ9IjIwMCIgcng9IjE1IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSIyMCIgeT0iMzMwIiB3aWR0aD0iMjMwIiBoZWlnaHQ9IjEwMCIgcng9IjE1IiBmaWxsPSJ3aGl0ZSIvPgo8dGV4dCB4PSIxMzUiIHk9IjI1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZvbnQtd2VpZ2h0PSJib2xkIj5GaW5hbnpBcHA8L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfc2NyZWVuMSIgeDE9IjAiIHkxPSIwIiB4Mj0iMjcwIiB5Mj0iNDgwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxZTNhOGEiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2I4MmY2Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+",
+            "sizes": "270x480",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Vista móvil de la aplicación"
+        },
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzY4IiBoZWlnaHQ9IjEwMjQiIHZpZXdCb3g9IjAgMCA3NjggMTAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijc2OCIgaGVpZ2h0PSIxMDI0IiByeD0iNDAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl9zY3JlZW4yKSIvPgo8cmVjdCB4PSI0MCIgeT0iODAiIHdpZHRoPSI2ODgiIGhlaWdodD0iNjAiIHJ4PSIzMCIgZmlsbD0id2hpdGUiIG9wYWNpdHk9IjAuOSIvPgo8cmVjdCB4PSI0MCIgeT0iMTcwIiB3aWR0aD0iNjg4IiBoZWlnaHQ9IjQwMCIgcng9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8cmVjdCB4PSI0MCIgeT0iNjAwIiB3aWR0aD0iNjg4IiBoZWlnaHQ9IjIwMCIgcng9IjI0IiBmaWxsPSJ3aGl0ZSIvPgo8dGV4dCB4PSIzODQiIHk9IjUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSJib2xkIj5GaW5hbnpBcHAgLSBWaXN0YSBUYWJsZXQ8L3RleHQ+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfc2NyZWVuMiIgeDE9IjAiIHkxPSIwIiB4Mj0iNzY4IiB5Mj0iMTAyNCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjMWUzYThhIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNiODJmNiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPg==",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Vista de escritorio de la aplicación"
+        }
+    ],
+    "prefer_related_applications": false
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanzApp - Gestión Semanal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="FinanzApp">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header floating">
+            <div class="header-content">
+                <h1><i class="fas fa-wallet bouncing"></i> FinanzApp</h1>
+                <p class="week-info" id="weekInfo">Semana del <span id="weekDates"></span></p>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav-tabs glowing">
+            <button class="tab-btn active" data-tab="ingresos">
+                <i class="fas fa-plus-circle rotating"></i>
+                <span>Ingresos</span>
+            </button>
+            <button class="tab-btn" data-tab="gastos">
+                <i class="fas fa-minus-circle"></i>
+                <span>Gastos</span>
+            </button>
+            <button class="tab-btn" data-tab="reporte" id="reporteTab">
+                <i class="fas fa-chart-line floating"></i>
+                <span>Reporte</span>
+            </button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Ingresos Tab -->
+            <div class="tab-content active" id="ingresos">
+                <div class="card glowing">
+                    <div class="card-header">
+                        <h2><i class="fas fa-money-bill-wave bouncing"></i> Registrar Ingresos</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="ingresoForm">
+                            <div class="form-group">
+                                <label for="cantidad">Cantidad ($)</label>
+                                <input type="number" id="cantidad" step="0.01" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcionIngreso">Descripción</label>
+                                <input type="text" id="descripcionIngreso" placeholder="Ej: Sueldo, bonificación, etc.">
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaIngreso">Fecha</label>
+                                <select id="fechaIngreso" required>
+                                    <option value="">Seleccionar día</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Registrar Ingreso
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Lista de ingresos -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Ingresos de esta semana</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="listaIngresos" class="transaction-list"></div>
+                        <div class="total-section">
+                            <strong>Total Ingresos: $<span id="totalIngresos">0.00</span></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gastos Tab -->
+            <div class="tab-content" id="gastos">
+                <div class="card glowing">
+                    <div class="card-header">
+                        <h2><i class="fas fa-shopping-cart floating"></i> Registrar Gastos</h2>
+                    </div>
+                    <div class="card-body">
+                        <form id="gastoForm">
+                            <div class="form-group">
+                                <label for="cantidadGasto">Cantidad ($)</label>
+                                <input type="number" id="cantidadGasto" step="0.01" min="0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcionGasto">¿En qué se gastó?</label>
+                                <input type="text" id="descripcionGasto" placeholder="Ej: Comida, transporte, etc." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaGasto">Fecha</label>
+                                <select id="fechaGasto" required>
+                                    <option value="">Seleccionar día</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-minus"></i> Registrar Gasto
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Lista de gastos -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Gastos de esta semana</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="listaGastos" class="transaction-list"></div>
+                        <div class="total-section">
+                            <strong>Total Gastos: $<span id="totalGastos">0.00</span></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reporte Tab -->
+            <div class="tab-content" id="reporte">
+                <div class="card floating">
+                    <div class="card-header">
+                        <h2><i class="fas fa-chart-pie rotating"></i> Reporte Semanal</h2>
+                        <p class="report-info" id="reporteInfo">Los reportes se habilitan los viernes después de la 1:00 PM</p>
+                    </div>
+                    <div class="card-body" id="reporteContent">
+                        <div class="reporte-bloqueado" id="reporteBloqueado">
+                            <i class="fas fa-lock"></i>
+                            <h3>Reporte No Disponible</h3>
+                            <p>Regresa el viernes después de la 1:00 PM para generar tu reporte semanal.</p>
+                        </div>
+
+                        <div class="reporte-activo" id="reporteActivo" style="display: none;">
+                            <div class="summary-grid">
+                                <div class="summary-item ingresos">
+                                    <i class="fas fa-arrow-up"></i>
+                                    <div>
+                                        <strong>Total Ingresos</strong>
+                                        <span id="resumenIngresos">$0.00</span>
+                                    </div>
+                                </div>
+                                <div class="summary-item gastos">
+                                    <i class="fas fa-arrow-down"></i>
+                                    <div>
+                                        <strong>Total Gastos</strong>
+                                        <span id="resumenGastos">$0.00</span>
+                                    </div>
+                                </div>
+                                <div class="summary-item balance">
+                                    <i class="fas fa-balance-scale"></i>
+                                    <div>
+                                        <strong>Balance</strong>
+                                        <span id="resumenBalance">$0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comentarioReporte">Comentarios de la semana</label>
+                                <textarea id="comentarioReporte" placeholder="Escribe tus observaciones sobre esta semana..."></textarea>
+                            </div>
+
+                            <button class="btn btn-success" onclick="finalizarSemana()">
+                                <i class="fas fa-check"></i> Finalizar Semana y Guardar Reporte
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historial de reportes -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Historial de Reportes</h3>
+                    </div>
+                    <div class="card-body">
+                        <div id="historialReportes" class="historial-list"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal" id="confirmModal">
+        <div class="modal-content">
+            <h3>¿Estás seguro?</h3>
+            <p id="confirmText">Esta acción no se puede deshacer.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" onclick="cerrarModal()">Cancelar</button>
+                <button class="btn btn-danger" id="confirmBtn">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
